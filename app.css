@@ -1,0 +1,113 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+body{
+    background-color: #60a9ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.panel{
+    max-width: 960px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.pricing-plan{
+    border-right: 1px solid #beaaaa;
+    border-bottom: 1px solid #9dd1ff;
+    text-align: center;
+    
+}
+.pricing-img{
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+.pricing-plan:nth-of-type(3)
+{
+    border-right: none;
+}
+.pricing-header{
+    letter-spacing: 1px;
+    color: #888888;
+}
+.pricing-features{
+    margin: 50px 0 25px;
+    color: #016ff9;
+}
+.pricing-features-item{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+
+}
+.pricing-features-item:last-child{
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price{
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+.pricing-button{
+    border: 1px solid #9dd1ff ;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+}
+
+.pricing-button:hover{
+   margin-bottom: 8px;
+   background-color: whitesmoke;
+   box-shadow: 0 10px 10px -2px skyblue;
+   color: blue;
+   border: 2px blue solid;
+   transition: all 0.3s;
+} 
+.pricing-button.is-featured{
+    background-color: #48aaff;
+    color: white;
+}
+.pricing-button.is-featured:hover{
+    argin-bottom: 8px;
+   background-color: whitesmoke;
+   box-shadow: 0 10px 10px -2px skyblue;
+   color: blue;
+   border: 2px blue solid;
+   transition: all 0.3s;
+}
+
+
+@media (max-width: 900px){
+    .panel{
+    flex-direction: column;
+}
+.pricing-plan{
+    border-right: none;
+}
+}
+@media (min-width: 900px){
+    .pricing-plan{
+        border-bottom: none;
+        padding: 25px 50px ;
+    }
+}
